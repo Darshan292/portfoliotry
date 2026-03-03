@@ -1,49 +1,53 @@
 export const Programming = [
-  "C",
-  "C++",
   "Python",
-  "Java",
+  "Typescript",
   "JavaScript",
-  "TypeScript",
   "SQL",
+  "Java",
+  "C++"
 ];
 
-export const Frontend = [
-  "HTML5",
-  "CSS",
-  "Reactjs",
-  "Next.js",
-  "TailwindCSS",
-  "Framer",
-  "React Native",
+export const Artificial_Intelligence_Machine_Learning = [
+  "Machine Learning",
+  "Generative AI (LLM Applications)",
+  "Natural Language Processing",
+  "Retrieval-Augmented Generation (RAG)",
+  "GraphRAG Architectures",
+  "Semantic Search & Information Retrieval",
+  "Hybrid Search Architectures",
+  "Vector Databases",
+  "Graph Databases",
+  "Computer Vision",
+  "Biometric Authentication Systems", 
 ];
 
-export const Backend = [
+export const Backend_System_Engineering = [
   "Node.js",
   "Express.js",
   "Flask",
+  "REST API Development",
+  "Authentication & Authorization",
+  "Data Processing & Transformation",
+  "API Integration",
+  "Automation Systems",
 ];
 
-export const Database = [
+export const Frontend=[
+  "React",
+  "Next.js",
+  "Tailwind CSS",
+  "Responsive Web Applications",
+  "Data Visualization",
+]
+
+export const Database_Infra = [
   "MongoDB",
   "MySQL",
   "Firebase",
   "Oracle",
+  "Docker",
 ];
 
-export const tools = [
-  "Figma",
-  "Android Studio",
-  "Visual Studio",
-  "Google Colab",
-  "Docker",
-  "Fernet",
-  "Puppeteer",
-  "OpenCV",
-  "Eclipse",
-  "MediaPipe",
-  "YOLOv8",
-];
   export const Socials = [
     {
       name: "LinkedIn",
@@ -135,7 +139,7 @@ export const Experience = [
     company: "Accelerlab Solutions Pvt Ltd",
     title: "MERN Stack Web Development",
     period: "Aug 2023 - Sep 2023",
-    description: "We developed a working website for Pet Adoption, it included features like creating profile, liking others profile, Search for pets and Contact pet owners. We were trained on MERN Stack using solutions like basics of Web Development (HTML, CSS, Bootstrap, JavaScript), ReactJs, NodeJs and MongoDB."
+    description: "Make this pointwise..."
   },
 
   {

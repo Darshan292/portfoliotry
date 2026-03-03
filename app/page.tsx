@@ -11,12 +11,13 @@ import Section from "@/components/main/Section";
 import { debounce } from "@/utils/debounce";
 
 
+
 export default function Home() {
 
   const [showEdEx, setshowEdEx] = useState(false);
 
   const handleNavigationClick = useCallback((section: 'education' | 'experience') =>{
-    const newValue = section === 'experience';
+    const newValue = section === 'education';
     setshowEdEx(newValue);
   }, []);
   const handleToggle = useCallback(() => {
@@ -35,16 +36,16 @@ export default function Home() {
         <section id="about-me">
           <Hero />
         </section>
-        <section id={`${showEdEx ? "experience":"education"}`}>
-          <EdEx Toggle={showEdEx} onToggle={handleToggle} />
+        <section id="projects">
+          <Projects />
         </section>
         <div className="w-full h-full z-30">
           <section id="skills">
             <Skills />
           </section>
         </div>
-        <section id="projects">
-          <Projects />
+        <section id={`${showEdEx ? "education":"experience"}`}>
+          <EdEx Toggle={showEdEx} onToggle={handleToggle} />
         </section>
         <section id="contacts">
           <ContactInfo />

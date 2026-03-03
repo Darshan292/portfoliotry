@@ -22,10 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-[#010304] overflow-y-scroll overflow-x-hidden`}
+        className={`${inter.className}  overflow-y-scroll overflow-x-hidden`}
+
       >
-        <StarsCanvas/>
-      {/* <ShootingStars/> */}
+        {/* <StarsCanvas/> */}
+        {/* <ShootingStars/> */}
         {children}
         <Footer />
       </body>

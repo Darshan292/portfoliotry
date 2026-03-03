@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 export default function Toggle() {
 
-    const [toggle,setToggle] = useState<boolean>(false)
+    const [toggle,setToggle] = useState<boolean>(true)
 
   return (
     <div

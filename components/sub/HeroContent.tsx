@@ -7,26 +7,36 @@ import {
   slideInFromRight,
   slideInFromTop,
 } from "@/utils/motion";
-import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+import {Typewriter} from "react-simple-typewriter";
+import { useState } from "react";
 
 const HeroContent = () => {
+  const [isTyping, setIsTyping] = useState(true);
   return (
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-20 lg:mt-60 max-lg:mt-[9.5rem] w-full z-[20] max-md:px-8"
+      className="flex flex-row items-center justify-between px-24 lg:mt-28 max-lg:mt-16  w-full z-[20] max-md:px-8"
     >
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start max-md:gap-2">
 
       <motion.div
         variants={slideInFromRight(0.8)}
+        animate={{
+          y: [0, -8, 0],
+        }}
+        transition={{
+          duration: 6,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
         className=" w-full h-full flex justify-center items-center lg:hidden"
       >
         <Image
-          className=" -rotate-12 max-sm:w-52 max-sm:h-52"
-          src="/Profilepic.png"
-          alt="work icons"
+          className="max-sm:w-52 rounded-xl shadow-xl shadow-black/70"
+          src="/ProfileImage3.png"
+          alt="profile pic"
           height={250}
           width={250}
           priority
@@ -35,37 +45,54 @@ const HeroContent = () => {
 
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-6 lg:mt-10 text-6xl font-bold text-white max-w-[600px] w-auto h-auto max-lg:mx-auto"
+          className="flex flex-col gap-4 lg:mt-6 text-7xl font-extrabold  max-w-[650px] w-auto h-auto max-lg:mx-auto"
         >
           <span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 lg:py-20 max-xl:text-[3.25rem] max-md:text-[2.75rem] max-sm:text-[2rem] max-[350px]:text-2xl">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r font-extrabold tracking-tight from-[#b8a998] via-[#b8a998] to-[#f3eee8] lg:py-20 max-xl:text-[3.25rem] max-md:text-[2.75rem] max-sm:text-[2rem] max-[350px]:text-2xl">
               {" "}
-              Darshan U Shetty {" "}
+              Darshan U Shetty {" "} 
             </span>
   
           </span>
         </motion.div>
         <motion.div
-          variants={slideInFromTop}
-          className="Welcome-box py-[8px] px-[7px] border border-[#488AC7] opacity-[0.9] max-md:w-fit max-md:px-3 max-lg:mx-auto"
+          variants={slideInFromLeft(0.5)}
+          className={`Welcome-box ${isTyping ? "active" : ""} lg:ml-0 py-2 px-6 opacity-90 w-fit  max-md:px-3 mx-auto`}
         >
-          <SparklesIcon className="text-[#ffffff] mr-[10px] h-5 w-5 max-md:w-10" />
-          <h1 className="Welcome-text text-[13px] max-md:text-[11px] max-sm:text-[8px]">
-          Full Stack Developer with Expertise in Business Analysis and AI Automation.
+          {/* <SparklesIcon className="text-[#C6C9CF] mr-[10px] h-5 w-5 max-md:w-10" /> */}
+          <h1 className="Welcome-text text-sm uppercase font-semibold max-md:text-[12px] max-sm:text-[10px] tracking-[0.2em]">
+            <span className="inline-block w-[280px] justify-center text-center">
+            <Typewriter
+              words={[
+                'Systems Architect',
+                'Applied AI Engineer',
+                'Product-Driven Builder',
+                'Performance-Oriented Developer',
+              ]}
+              loop
+              cursor
+              cursorStyle="|"
+              typeSpeed={60}
+              deleteSpeed={45}
+              delaySpeed={1300}
+              onType={() => setIsTyping(true)}
+              onDelete={() => setIsTyping(false)}
+            />
+            </span>
           </h1>
+
         </motion.div>
 
         <motion.p
           variants={slideInFromLeft(0.8)}
-          className="text-lg text-white lg:my-5 my-2 max-w-[600px] max-lg:text-center max-lg:w-[75%] max-md:w-[80%] max-sm:w-full max-lg:mx-auto max-sm:text-sm max-md:text-base"
+          className="text-[17px] text-[#ede3e3] leading-relaxed lg:my-5 my-2 max-w-[600px] max-lg:text-center max-lg:w-[75%] max-md:w-[80%] max-sm:w-full max-lg:mx-auto max-sm:text-sm max-md:text-base"
         >
-          I&apos;m a Computer Science & Engineering graduate specializing in Full Stack Development, Business Analysis, and Machine Learning with experience in Website,
-          Mobile, and Software development.
+          I design and deliver scalable software and AI-powered systems that solve high-impact business challenges. With a strong focus on architecture, performance, and intelligent automation, I build solutions that are production-ready, future-proof, and built to scale.
         </motion.p>
         <div className="flex flex-row w-full h-auto gap-5 max-lg:justify-center">
           <motion.a
-            variants={slideInFromLeft(1)}
-            className="py-2 button-primary text-center text-white cursor-pointer rounded-lg w-[200px]  max-md:text-sm border"
+            variants={slideInFromLeft(0.8)}
+            className="px-8 py-2 button-primary text-sm tracking-w text-center text-[#1f1f1f] font-semibold cursor-pointer rounded-lg border max-md:text-sm"
             href="/Resume.pdf" 
             download="Darshan_U_Shetty_Resume.pdf"
           >
@@ -82,12 +109,20 @@ const HeroContent = () => {
 
       <motion.div
         variants={slideInFromRight(0.8)}
+        animate={{
+          y: [0, -10, 0],
+        }}
+        transition={{
+          duration: 5,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
         className="w-full h-full flex justify-end items-center max-lg:hidden"
       >
         <Image
-          className=" -rotate-12"
-          src="/Profilepic.png"
-          alt="work icons"
+          className=" bg-white rounded-xl shadow-xl shadow-black/70"
+          src="/ProfileImage3.png"
+          alt="profile pic"
           height={400}
           width={400}
         />

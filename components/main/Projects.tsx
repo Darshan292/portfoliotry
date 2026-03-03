@@ -25,7 +25,7 @@ const Projects = () => {
       className="flex flex-col items-center justify-center mb-10"
       id="projectsmain"
     >
-        <h1 className="text-5xl mt-20 max-lg:mt-14 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-100 max-md:text-4xl max-sm:text-3xl max-[350px]:text-2xl">
+        <h1 className="text-5xl mt-20 max-lg:mt-14 font-semibold text-transparent bg-clip-text bg-[#f3eee8]  max-md:text-4xl max-sm:text-3xl max-[350px]:text-2xl ">
           Projects
         </h1>
       <motion.div 

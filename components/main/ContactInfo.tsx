@@ -44,14 +44,14 @@ const ContactInfo: React.FC = () => {
   };
   return (
     <div className='flex flex-col items-center justify-center' id='contactsmain'>
-    <h1 className="text-5xl mt-20 max-lg:mt-16 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-100 max-md:text-4xl max-sm:text-3xl max-[350px]:text-2xl">
+    <h1 className="text-5xl mt-20 max-lg:mt-16 font-semibold text-transparent bg-clip-text bg-[#f3eee8]  max-md:text-4xl max-sm:text-3xl max-[350px]:text-2xl">
         Contact Me!
       </h1>
-    <form onSubmit={handleSubmit(onSubmit)} className="w-[30%] mx-auto p-[1.5px] rounded-3xl z-20 mt-8  max-lg:mt-4 max-lg:w-[50%] max-sm:w-[60%] max-[540px]:w-[80%] bg-gradient-to-r from-purple-500 to-cyan-500 shadow-2xl sm:shadow-[#ffffff42] shadow-[#ffffff52]">
-      <div className='w-full h-full bg-[#000000] p-6 rounded-3xl backdrop-blur-md'>
+    <form onSubmit={handleSubmit(onSubmit)} className="w-[30%] mx-auto p-[1.5px] rounded-3xl z-20 mt-8  max-lg:mt-4 max-lg:w-[50%] max-sm:w-[60%] max-[540px]:w-[80%] bg-gradient-to-r from-[#c7b8a6] to-[#f3eee8] shadow-lg sm:shadow-[#b2d0fa7c] shadow-[#b2d0fa7c]">
+      <div className='w-full h-full bg-[#080808] p-6 rounded-3xl backdrop-blur-md'>
       <div className="mb-4">
         <div className='flex flex-row gap-2'>
-        <label htmlFor="name" className="block text-sm font-medium text-white after:content-['*'] after:text-red-800">Name</label>
+        <label htmlFor="name" className="block text-sm font-medium text-[#c7b8a6] after:content-['*'] after:text-red-800">Name</label>
         </div>
         <input
           id="name"
@@ -65,7 +65,7 @@ const ContactInfo: React.FC = () => {
 
       <div className="mb-4">
       <div className='flex flex-row gap-2'>        
-        <label htmlFor="email" className="block text-sm font-medium text-white after:content-['*'] after:text-red-800">Email</label>
+        <label htmlFor="email" className="block text-sm font-medium text-[#c7b8a6] after:content-['*'] after:text-red-800">Email</label>
       </div>
         <input
           id="email"
@@ -79,7 +79,7 @@ const ContactInfo: React.FC = () => {
 
       <div className="mb-4">
         <div className='flex flex-row gap-2'>    
-          <label htmlFor="subject" className="block text-sm font-medium text-white after:content-['*'] after:text-red-800">Subject</label>
+          <label htmlFor="subject" className="block text-sm font-medium text-[#c7b8a6] after:content-['*'] after:text-red-800">Subject</label>
         </div>
         <input
           id="subject"
@@ -93,7 +93,7 @@ const ContactInfo: React.FC = () => {
 
       <div className="mb-4">
         <div className='flex flex-row gap-2'>    
-          <label htmlFor="description" className="block text-sm font-medium text-white after:content-['*'] after:text-red-800">Description</label>
+          <label htmlFor="description" className="block text-sm font-medium text-[#c7b8a6] after:content-['*'] after:text-red-800">Description</label>
         </div>
         <textarea
           id="description"
@@ -108,7 +108,7 @@ const ContactInfo: React.FC = () => {
       <div className='flex justify-end w-full'>
         <button
           type="submit"
-          className="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          className="px-4 py-2 bg-[#c7b8a6] text-[#111111] text-sm font-semibold rounded-md shadow-sm hover:bg-[#776e63] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
         >
           Send &#9658;	
         </button>
