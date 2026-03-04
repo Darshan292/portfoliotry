@@ -114,7 +114,11 @@ export const EdEx: React.FC<Props> = ({Toggle, onToggle}) => {
             </div>
 
             <div className="text-sm text-[#c7b8a6] mt-1 text-justify max-sm:text-xs">
-              {item.description}
+              <ul>
+              {item.description.map((point, i) => (
+                 <li key={i}>{point}</li> 
+                ))}
+            </ul>
             </div>
           </motion.div>
         ))}

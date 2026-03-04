@@ -122,7 +122,7 @@ export const Education = [
     period: "2020 - 2024",
     description: "- Mangalore Institute of Technology and Engineering, Moodbidri.",
     Marks:"CGPA : 8.39/10"  },
-  {
+   {
     title: "Higher Secondary Education (2nd PUC)",
     period: "2020",
     description: "- S.R.P.U College, Hebri",
@@ -135,29 +135,21 @@ export const Education = [
 ];
 
 export const Experience = [
-  {
-    company: "Accelerlab Solutions Pvt Ltd",
-    title: "MERN Stack Web Development",
-    period: "Aug 2023 - Sep 2023",
-    description: "Make this pointwise..."
-  },
-
-  {
-    company: "Varcons Technologies Pvt Ltd",
-    title: "Full Stack Web Development",
-    period: "Jan 2023 - Feb 2023",
-    description: "Developed an extensive web template named “Leisure Square” where a user could make reservations. Gained experience in Front-end and Back-end development. The technologies used where HTML, CSS and Javascript."
-  },
-
-  {
-    company: "Salesforce",
-    title: "Developer",
-    period: "Oct 2022 - Dec 2022",
-    description:"Developed custom applications, process diagrams, data flow diagrams that improved understanding of systems. Completed the modules and the projects assigned in the modules, to earn badges and superbadges. Gained experience in using Salesforce platform.",
-  },
-];
-
-  
+{
+  company: "Accelerlab Solutions Pvt Ltd",
+  title: "AI Engineer / Software Engineer",
+  period: "Oct 2023 - Present",
+  description: [
+    "Delivered $40K UKG automation project two weeks early",
+    "Built AI talent intelligence platform ranking candidates with comparison tools, customizable ranking criteria, and analytics dashboards",
+    "Developed enterprise AI decision systems across HR platforms",
+    "Developed end-to-end enterprise AI assessment platform generating and evaluating answers, reducing grading workload 85% and integrating with LMS systems",
+    "Currently building a Workday EIB intelligent data-mapping system that automatically aligns source datasets to enterprise templates.",
+    "Integrated HR platforms (Workday, UKG, Kronos) with automation and AI workflows to improve operational efficiency.",
+    "Recognized as 'Star Performer – AI Hero' and received multiple company awards for high-impact delivery."
+  ]
+}
+]
   
  
   
