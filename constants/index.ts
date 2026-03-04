@@ -136,17 +136,17 @@ export const Education = [
 
 export const Experience = [
 {
-  company: "Accelerlab Solutions Pvt Ltd",
-  title: "AI Engineer / Software Engineer",
-  period: "Oct 2023 - Present",
+  company: "Tata Consultancy Services",
+  title: "Systems Engineer",
+  period: "Aug 2024 - Present",
   description: [
     "Delivered $40K UKG automation project two weeks early",
-    "Built AI talent intelligence platform ranking candidates with comparison tools, customizable ranking criteria, and analytics dashboards",
-    "Developed enterprise AI decision systems across HR platforms",
-    "Developed end-to-end enterprise AI assessment platform generating and evaluating answers, reducing grading workload 85% and integrating with LMS systems",
-    "Currently building a Workday EIB intelligent data-mapping system that automatically aligns source datasets to enterprise templates.",
-    "Integrated HR platforms (Workday, UKG, Kronos) with automation and AI workflows to improve operational efficiency.",
-    "Recognized as 'Star Performer – AI Hero' and received multiple company awards for high-impact delivery."
+    "Built AI talent intelligence platform for candidate ranking, comparisons, analytics, and adjustable hiring criteria",
+    "Developed end-to-end AI assessment platform for question generation and automated grading, reducing workload 85%, LMS-integrated",
+    "Built AI contract intelligence platform enabling SOW analysis, financial reconciliation, and document querying",
+    "Building intelligent Workday EIB data-mapping system aligning source datasets to enterprise templates",
+    "Integrated Workday and UKG platforms with AI-driven automation and intelligent data workflows",
+    "Recognized as Star Performer - AI Hero and multiple company awards"
   ]
 }
 ]
