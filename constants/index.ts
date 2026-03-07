@@ -136,11 +136,11 @@ export const Education = [
 
 export const Experience = [
 {
-  company: "Tata Consultancy Services",
+  company: "TATA CONSULTANCY SERVICES",
   title: "Systems Engineer",
   period: "Aug 2024 - Present",
   description: [
-    "Delivered $40K UKG automation project two weeks early",
+    "Delivered $40K UKG Ready automation project two weeks early & 0 reworks.",
     "Built AI talent intelligence platform for candidate ranking, comparisons, analytics, and adjustable hiring criteria",
     "Developed end-to-end AI assessment platform for question generation and automated grading, reducing workload 85%, LMS-integrated",
     "Built AI contract intelligence platform enabling SOW analysis, financial reconciliation, and document querying",
@@ -148,6 +148,23 @@ export const Experience = [
     "Integrated Workday and UKG platforms with AI-driven automation and intelligent data workflows",
     "Recognized as Star Performer - AI Hero and multiple company awards"
   ]
+},
+{
+  company: "ACCELERLAB SOLUTIONS PVT LTD",
+  title: "MERN Stack Web Development Intern",
+  period: "Aug 2023 - Sep 2023",
+  description: [
+    "Built and integrated full-stack web features using the MERN stack, developing REST APIs and responsive UI components for scalable web applications.",
+    ]
+},
+{
+  company: "SALESFORCE",
+  title: "Developer Intern",
+  period: "Oct 2022 – Dec 2022",
+  description: [
+    "Developed custom Salesforce solutions and system workflows, designing process and data-flow diagrams to support enterprise application architecture.",
+    "Achieved Expeditioner rank on Trailhead with 62 badges and 81K+ points."
+    ]
 }
 ]
   

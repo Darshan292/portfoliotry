@@ -47,7 +47,7 @@ export const EdEx: React.FC<Props> = ({Toggle, onToggle}) => {
       variants={boxAnimationVariants}
       initial="initial"
       animate={ startAnimate ? "animate":"initial"}
-      className="max-w-2xl mx-auto antialiased p-4 w-full mt-8 max-lg:mt-5 relative bg-[#080808] border-2 border-[#aa9988]  rounded-3xl z-20 max-md:w-[80%]"
+      className="max-w-3xl mx-auto antialiased p-4 w-full mt-8 max-lg:mt-5 relative bg-[#080808] border-2 border-[#aa9988]  rounded-3xl z-20 max-md:w-[80%]"
       transition={{
         duration:1, 
       }}>
@@ -72,7 +72,7 @@ export const EdEx: React.FC<Props> = ({Toggle, onToggle}) => {
           <motion.div 
           ref={animatetext}
           key={`content-${index}`} 
-          className="mb-10 mt-5 max-sm:mb-5 max-sm:mt-2"
+          className="mb-10 mt-5 max-sm:mb-5 max-sm:mt-2 mx-10"
           variants={textAnimationVariants}
           initial = "initial"
           animate = {inviewbox ? "animate":"initial"}
@@ -99,7 +99,7 @@ export const EdEx: React.FC<Props> = ({Toggle, onToggle}) => {
           <motion.div 
           ref={animatetext}
           key={`content-${index}`} 
-          className="mb-10 mt-5 px-3 max-sm:mb-5 max-sm:mt-2"
+          className="mb-5 mt-5 px-1 max-sm:mb-5 max-sm:mt-2"
           variants={textAnimationVariants}
           initial = "initial"
           animate = {inviewbox ? "animate":"initial"}
@@ -112,9 +112,11 @@ export const EdEx: React.FC<Props> = ({Toggle, onToggle}) => {
               &#128197; {item.period}
               </p>
             </div>
-
+            <p className="text-md text-[#aa9988] font-bold max-sm:text-xs">
+              &emsp;{item.company}
+              </p>
             <div className="text-sm text-[#c7b8a6] mt-1 text-justify max-sm:text-xs">
-              <ul>
+              <ul className="list-disc pl-5 space-y-1">
               {item.description.map((point, i) => (
                  <li key={i}>{point}</li> 
                 ))}
